@@ -65,9 +65,10 @@ favoriteThings.food = "Chicken Nuggets"; favoriteThings.book = "Harry Potter";
 */
 
 var backPack = {}
-var item = 'firstPocket';
+var item = "firstPocket";
 
-item["firstPocket"]; backPack.color = "black";
+backPack[item] = "chapstick";
+backPack.color = "black";
 
 
 
@@ -120,7 +121,10 @@ user2.name = "Tyler S. McGinnis"; user2.email = "tyler.mcginnis@devmounta.in";
   Create an empty object called methodCollection.
 */
 
-var methodCollection = {};
+var methodCollection = {
+
+};
+
 
 
 /*
@@ -128,8 +132,12 @@ var methodCollection = {};
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
 
-methodCollection.alertHello = "hello"; methodCollection.logHello = console.log("hello");
-
+methodCollection.alertHello = () => {
+ alert("hello");
+};
+methodCollection.logHello = () => {
+  console.log("hello");
+};
 
 /*
   Now call your alertHello and logHello methods.
@@ -151,9 +159,8 @@ var newObject = {
   birthday: soon,
   ssn: 324
 }
-
-return newObject;}
-
+return newObject;
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -161,7 +168,3 @@ return newObject;}
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-
-function makeCard(cardNumber,expirationDate,securityCode){
-  return makeCard;
-}
