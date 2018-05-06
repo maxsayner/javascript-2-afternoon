@@ -155,11 +155,12 @@ methodCollection.alertHello; methodCollection.logHello;
 
 function makePerson (name,birthday,ssn){
 var newObject = {
-  name: max,
-  birthday: soon,
-  ssn: 324
+  name: "Tester",
+  birthday: "Nov 1",
+  ssn:'123456789'
 }
 return newObject;
+
 }
 ////////// PROBLEM 7 //////////
 
@@ -168,3 +169,12 @@ return newObject;
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
+function makeCard(arr) {
+  var makeNewCard = {
+  cardNumber: 1234,
+  expirationDate: "feburary 8",
+  securtiyCode: 345
+
+  }
+  return makeNewCard;
+}
